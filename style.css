@@ -91,9 +91,15 @@ input {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1366px) {
     html {
         font-size: 90%;
+        }
+    }
+
+@media (max-width: 450px) {
+    html {
+        font-size: 75%;
     }
 
     .row {
