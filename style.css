@@ -96,12 +96,6 @@ input {
         font-size: 90%;
         }
     }
-
-@media (max-width: 450px) {
-    html {
-        font-size: 75%;
-    }
-
     .row {
         flex-wrap: wrap;
         flex-direction: column;
