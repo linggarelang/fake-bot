@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #99FFFF;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    border: none;
+    padding: 1rem 1.5rem;
+    margin-left: .5rem;
+    margin-top: .7rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF3F00;
+    color: #eaeaea;
+    transition: .1s linear;
+}
+
+input {
+    border: none;
+    background-color: #eaeaea;
+    color: #222;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: .5rem;
+    margin-top: .8rem;
+    width: 100%;
+}
+
+#loaders {
+    display: none;
+    width: 85px;
+    height: 85px;
+    margin-top: -50px;
+    margin-left: -50px;
+    position: absolute;
+    border-top: 1rem solid #FF3F00;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 75%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+
+}
